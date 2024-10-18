@@ -12,7 +12,7 @@ const stringArr = ["Real-time market data", "In-Depth Market Analysis", "Persona
       </p>
       <p className='font-bold text-4xl md:text-5xl lg:text-6xl'>Your Timely Market Intelligence Hub</p>
       <p className='text-lg'>At Dubtrack, we're committed to providing you with the most accurate and reliable financial data available.
-      <br/>Our team of experts works tirelessly to ensure that our platform delivers:
+      <br/>Our team of experts works tirelessly to ensure that our platform <br/> delivers:
       <ReactTyped className='font-semibold ml-2 text-lg text-gray-900' strings={stringArr} typeSpeed={30} backSpeed={40} loop />
       </p>
       </div>
