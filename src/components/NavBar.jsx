@@ -16,20 +16,18 @@ setNavShowing(!navShowing)
   return (
   <>
 <nav className="nav hidden md:flex gap-4">
-  <AnchorLink href="#home">Home</AnchorLink>
-  <AnchorLink href="#dashboard">Dashboard</AnchorLink>
-  <AnchorLink href="#resources">Resources</AnchorLink>
-  <AnchorLink href="#about">About</AnchorLink>
-  <AnchorLink href="#contact">Contact</AnchorLink>
+  <AnchorLink className='hover:font-bold' href="#home">Home</AnchorLink>
+  <AnchorLink className='hover:font-bold' href="#dashboard">Dashboard</AnchorLink>
+  <AnchorLink className='hover:font-bold' href="#about">About</AnchorLink>
+  <AnchorLink className='hover:font-bold' href="#contact">Contact</AnchorLink>
 </nav>
 <div className="mobile-nav flex  gap-2 md:hidden">
   <div className={`h-full ease-in-out duration-1000 flex-col text-secondary w-[50%] fixed z-10 bg-stone-300 left-0 pt-16 top-0 gap-4 ${navShowing? "flex" : "hidden"}`}>
     <img src={Logo} alt="Logo" className="h-12 object-contain"/>
-  <AnchorLink href="#home"  onClick={()=>{setNavShowing(false)}}  className="border-b-2 border-b-primary text-center font-medium uppercase">Home</AnchorLink>
-  <AnchorLink href="#dashboard" onClick={()=>{setNavShowing(false)}} className="border-b-2 border-b-primary text-center font-medium uppercase" >Company</AnchorLink>
-  <AnchorLink href="#resources" onClick={()=>{setNavShowing(false)}} className="border-b-2 border-b-primary text-center font-medium uppercase" >Resources</AnchorLink>
-  <AnchorLink href="#about"  onClick={()=>{setNavShowing(false)}}className="border-b-2 border-b-primary text-center font-medium uppercase">About</AnchorLink>
-  <AnchorLink href="#contact" onClick={()=>{setNavShowing(false)}} className="border-b-2 border-b-primary text-center font-medium uppercase">Contact</AnchorLink>
+  <AnchorLink href="#home"  onClick={()=>{setNavShowing(false)}}  className="border-b-2  hover:font-bold border-b-primary text-center font-medium uppercase">Home</AnchorLink>
+  <AnchorLink href="#dashboard" onClick={()=>{setNavShowing(false)}} className="border-b-2 hover:font-bold border-b-primary text-center font-medium uppercase" >Dashboard</AnchorLink>
+  <AnchorLink href="#about"  onClick={()=>{setNavShowing(false)}}className="border-b-2 hover:font-bold border-b-primary text-center font-medium uppercase">About</AnchorLink>
+  <AnchorLink href="#contact" onClick={()=>{setNavShowing(false)}} className="border-b-2 hover:font-bold border-b-primary text-center font-medium uppercase">Contact</AnchorLink>
   <p className="slogan absolute left-1/2 bottom-12 transform -translate-x-1/2">Data, Insights, Decisions...</p>
   </div>
   <div className="toggleMenu">
