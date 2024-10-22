@@ -1,13 +1,18 @@
 import React from 'react'
 import graphicImg from "../../Assets/dashboardimg.png"
 import GetStartedBtn from '../GetStartedBtn'
+import { motion } from 'framer-motion'
 
 function Dashboard() {
   return (
 <div id='dashboard' className="md:grid ml-4 flex flex-col items-center relative gap-4 md:grid-cols-2">
-  <div className="img-container bg-secondary">
+  <motion.div 
+    initial={{translateX: -400}}
+    whileInView={{translateX: 0}} 
+    transition={{duration: 1}}
+   className="img-container bg-secondary">
     <img src={graphicImg} alt='finance dashboard graphic'/>
-  </div>
+  </motion.div>
   <div className="md:absolute md:top-1/2 md:left-1/2 md:transform flex flex-col items-center gap-4 md:-translate-y-2/3 ">
     <h1 className='text-center mb-4 text-black md:text-2xl '>Finance Analytics Dashboard</h1>
     <h1 className='text-secondary mb-8 text-2xl md:text-4xl text-center font-semibold'>YOUR FINANCIAL DASHBOARD, YOUR STRATEGIC ADVANTAGE</h1>

@@ -18,14 +18,14 @@ function Contact() {
           <img className='h-12 object-contain' src={Logo} alt="dubtrack logo" />
           <p>Data-driven insights, precision-engineered results.
           Your financial future, built on a foundation of accuracy</p>
-          <div className="icons flex text-2xl gap-4 m-4 text-primary">
+          <div className="icons flex text-2xl cursor-pointer gap-4 m-4 text-primary">
           <FaFacebook />
           <FaTwitter />
           <FaSnapchat />
           <FaInstagram />
            </div>
         </div>
-        <div className='accordions items-center w-full my-8 flex justify-between md:hidden'>
+        <div className='accordions items-start w-full my-8 flex justify-between md:hidden'>
         <Accordion content={["About Company", "Company Services", "Job Opportunities", "Creative People"]} text="Company" />
         <Accordion content={["Client Support", "Latest News", "Company Story", "Pricing Packages"]} text="Customer" />
         <Accordion content={["Our Story", "Who We Are", "Our Process", "Latest News"]} text="Additional" />
